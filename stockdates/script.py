@@ -51,6 +51,6 @@ formatted_dates = [date.strftime("%B %d, %Y") for date in earnings_dates]
 if len(formatted_dates) == 1:
 print(f"Earnings date for {stock_symbol}: {formatted_dates[0]}")
 else:
-print(f"Earnings dates for {stock_symbol}: {', '.join(formatted_dates)}")
+print(f"Earnings dates for {stock_symbol}: {' - '.join(formatted_dates)}")
 else:
 print(f"Earnings date not found for {stock_symbol}.")
